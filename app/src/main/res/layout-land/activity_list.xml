@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="200dp">
+
+        <Spinner
+            android:theme="@style/captionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SpinnerSorting"
+            android:entries="@array/Sortowanie"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Spinner
+            android:theme="@style/captionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SpinnerCategory2"
+            android:entries="@array/Kategorie2"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <ListView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+</LinearLayout>

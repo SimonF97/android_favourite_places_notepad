@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formularz logowania"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:hint="Login"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView1" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editLogin" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:onClick="login"
+        android:theme="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Zaloguj się"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editPassword" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:theme="@style/captionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nie masz jeszcze konta?"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/buttonLogin"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:onClick="goToRegister"
+        android:theme="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Zarejestruj się"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView2" />
+
+</RelativeLayout>

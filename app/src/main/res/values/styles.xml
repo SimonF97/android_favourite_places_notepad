@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#008080</item>
+        <item name="colorPrimaryDark">#008080</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="colorButtonNormal">#008080</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:bottomRightRadius">7dp</item>
+        <item name="android:bottomLeftRadius">7dp</item>
+        <item name="android:topRightRadius">7dp</item>
+        <item name="android:topLeftRadius">7dp</item>
+    </style>
+
+    <style name="captionText" parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>

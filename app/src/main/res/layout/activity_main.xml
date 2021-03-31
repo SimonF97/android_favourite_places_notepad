@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Witaj użytkowniku!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panel sterowania profilem"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView1"/>
+
+    <Button
+        android:id="@+id/buttonRedirectProfile"
+        android:onClick="goToProfile"
+        android:theme="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Zmień dane konta"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView2"/>
+
+    <Button
+        android:id="@+id/buttonDeleteAccount"
+        android:onClick="deleteAccount"
+        android:theme="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:text="Usuń konto"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonRedirectProfile"/>
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    tools:context=".ShowPlaceActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pokaż dane lokalu o id"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/stars"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/puste" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Nazwa"
+                android:theme="@style/captionText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/nazwaTextView" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nazwaTextViewWynik" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Adres"
+                android:theme="@style/captionText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/adresTextView" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adresTextViewWynik" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Ocena"
+                android:theme="@style/captionText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ocenaTextView" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ocenaTextViewWynik" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Opinia"
+                android:theme="@style/captionText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/opiniaTextView" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/opiniaTextViewWynik"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Kategoria"
+                android:theme="@style/captionText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/kategoriaTextView" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kategoriaTextViewWynik" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Lokalizacja"
+                android:theme="@style/captionText"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/lokalizacjaTextView" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lokalizacjaTextViewWynik" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <RelativeLayout
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"/>
+
+            <ImageView
+                android:id="@+id/transparent_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/transparent" />
+
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <Button
+            android:text="Wyszukaj w Google"
+            android:onClick="showGoogle"
+            android:theme="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/showGoogleButton"
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:id="@+id/webView_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/transparent_image2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/transparent" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

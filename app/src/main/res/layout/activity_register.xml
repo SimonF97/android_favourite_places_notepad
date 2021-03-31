@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formularz rejestracji"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/editLogin"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Login"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView1"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editLogin"/>
+
+    <EditText
+        android:id="@+id/editPasswordRepeat"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Powtórz hasło"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editPassword"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:onClick="register"
+        android:theme="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Zarejestruj się"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editPasswordRepeat"/>
+
+    <Button
+        android:id="@+id/buttonBackToLogin"
+        android:onClick="backToLogin"
+        android:theme="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Powrót do formularza logowania"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonRegister"/>
+
+</RelativeLayout>

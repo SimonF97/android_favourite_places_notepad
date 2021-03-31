@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Notatnik - ulubione lokale</string>
+    <string-array name="Oceny">
+        <item> 1 Gwiazdka </item>
+        <item> 2 Gwiazdki </item>
+        <item> 3 Gwiazdki </item>
+        <item> 4 Gwiazdki </item>
+        <item> 5 Gwiazdek </item>
+    </string-array>
+    <string-array name="Kategorie">
+        <item> Restauracja </item>
+        <item> Pub </item>
+        <item> Przychodnia </item>
+        <item> Warsztat </item>
+        <item> Sklep </item>
+    </string-array>
+    <string-array name="Sortowanie">
+        <item> Czas dodania (od najstarszego) </item>
+        <item> Czas dodania (od najnowszego) </item>
+        <item> Alfabetycznie (A-Z) </item>
+        <item> Alfabetycznie (Z-A) </item>
+        <item> Oceny (rosnąco) </item>
+        <item> Oceny (malejąco) </item>
+    </string-array>
+    <string-array name="Kategorie2">
+        <item> Wszystkie kategorie </item>
+        <item> Restauracja </item>
+        <item> Pub </item>
+        <item> Przychodnia </item>
+        <item> Warsztat </item>
+        <item> Sklep </item>
+    </string-array>
+</resources>
